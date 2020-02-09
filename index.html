@@ -1,1 +1,48 @@
-Hello World
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./src/index.css">
+    <title>Momontom</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <!-- clock -->
+    <div class="js-clock">
+        <h1>00:00</h1>
+    </div>
+    <!-- Get User name / greeting -->
+    <form class="js-form form">
+        <input type="text" placeholder="Hello, What is your name?" />
+    </form>
+    <h3 class="js-greetings greetings">
+    </h3>
+
+    <!-- todo -->
+    <h2>Tasks</h2>
+    <form class="js-toDoForm">
+        <input placeholder="Add task" />
+    </form>
+
+    <!-- <div class="todo-container"> -->
+    <h3 class="pending">Pending...</h2>
+        <ul class="js-toDoListPending"></ul>
+        <h3 class="css-Done">Done</h2>
+            <ul class="js-toDoListDone"></ul>
+
+            <!-- weather -->
+            <div class="top-row">
+                <div class="top-left"></div>
+                <div class="top-middle"></div>
+                <span class="js-weather"></span>
+            </div>
+            <!-- js -->
+            <script src="src/clock.js"></script>
+            <script src="src/bg.js"></script>
+            <script src="src/weather.js"></script>
+            <script src="src/greeting.js"></script>
+            <script src="src/todo.js"></script>
+</body>
+
+</html>

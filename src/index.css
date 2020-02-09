@@ -1,0 +1,145 @@
+.btn {
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.clicked {
+    color: #7f8c8d;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #f3d112; */
+    background-color: #34495e;
+    min-height: 100%;
+    overflow: hidden;
+    background: #fff;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+}
+
+body,
+input,
+textarea {
+    margin: 0;
+    color: #7f8c8d;
+    font-size: 100%;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+}
+
+/* weather */
+.top-row {
+    z-index: 4;
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.top-right {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: right;
+}
+
+.top-left,
+.top-middle .js-weather {
+    color: rgb(138, 138, 138);
+    flex: 1 1 auto;
+    position: relative;
+    display: flex;
+    font-size: 20px;
+    text-shadow: 3px 3px rgb(94, 94, 94);
+}
+
+/* end weather */
+
+h1 {
+    margin: 0px;
+    color: white;
+    font-size: 120px;
+    text-shadow: 3px 3px rgb(94, 94, 94);
+}
+
+h2 {
+    margin: 0px;
+    color: white;
+    font-size: 30px;
+    text-shadow: 3px 3px rgb(94, 94, 94);
+}
+
+h3 {
+    margin: 0px;
+    color: white;
+    font-size: 30px;
+    text-shadow: 3px 3px rgb(94, 94, 94);
+}
+
+h2.pending {
+    position: static;
+    border: 3px solid #73AD21;
+}
+
+/* greeting */
+.form,
+.greetings {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+/* background */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn .5s linear;
+}
+
+
+/* Todo */
+.todo-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+
+.todo-container>div {
+    margin: 0px 20px;
+}
+
+.js-toDoForm input {
+    width: 250px;
+    height: 20px;
+    padding: 5px 10px;
+    border: 3px solid #f2f2f2;
+    border-radius: 15px;
+    box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.2);
+    color: black
+}
